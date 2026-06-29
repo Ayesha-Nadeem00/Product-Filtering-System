@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Catalog</title>
+
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <header class="header">
+    <h1 class="logo">🛒 ShopEasy</h1>
+    <p class="tagline">Find what you love, at the right place.</p>
+  </header>
+
+  <section class="controls">
+    <div class="control-group">
+      <label for="searchInput">Search</label>
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search products..."
+        oninput="applyFilters()"
+      >
+    </div>
+
+    <div class="control-group">
+      <label for="categoryFilter">Category</label>
+      <select id="categoryFilter" onchange="applyFilters()">
+        <option value="all">All Categories</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Clothing">Clothing</option>
+        <option value="Books">Books</option>
+        <option value="Home">Home</option>
+        <option value="Sports">Sports</option>
+      </select>
+    </div>
+
+
+    <div class="control-group">
+      <label for="priceSort">Sort by Price</label>
+      <select id="priceSort" onchange="applyFilters()">
+        <option value="default">Default</option>
+        <option value="low-high">Low to High</option>
+        <option value="high-low">High to Low</option>
+      </select>
+    </div>
+
+  </section>
+
+
+  <div class="results-bar">
+    <span id="resultsCount">Showing 0 products</span>
+  </div>
+
+
+  <main>
+    <div class="product-grid" id="productGrid"></div>
+
+    <div class="empty-state" id="emptyState" style="display:none;">
+      <p>No products match your search.</p>
+      <small>Try a different name or category.</small>
+    </div>
+  </main>
+
+  
+  <footer class="footer">
+    <p>© 2025 ShopEasy.</p>
+  </footer>
+
+  
+  <script src="app.js"></script>
+</body>
+</html>
