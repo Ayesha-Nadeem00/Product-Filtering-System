@@ -1,40 +1,37 @@
 [
   {
-    "id": 1,
+    "id": 1, 
     "name": "Wireless Headphones",
     "category": "Electronics",
     "price": 3500
   },
-  {
-    "id": 2,
-    "name": "Bluetooth Speaker",
-    "category": "Electronics",
-    "price": 2500
-  },
-  {
-    "id": 3,
-    "name": "Smartphone Stand",
-    "category": "Electronics",
-    "price": 1500
-  },
-  {
-    "id": 4,
-    "name": "USB-C Charging Cable",
-    "category": "Electronics",
-    "price": 1800
-  },
-  {
-    "id": 5,
-    "name": "Laptop Sleeve",
-    "category": "Electronics",
-    "price": 1900
-  },
-  {
-    "id": 6,
-    "name": "Joggers",
-    "category": "Sports",
-    "price": 4599
-  },
+  { 
+    "id": 2, 
+  "name": "Bluetooth Speaker", 
+  "category": "Electronics",
+  "price": 2500 
+},
+  { 
+    "id": 3, 
+  "name": "Smartphone Stand", 
+  "category": "Electronics", 
+  "price": 1500 },
+  { 
+    "id": 4, 
+  "name": "USB-C Charging Cable", 
+  "category": "Electronics", 
+  "price": 1800 
+},
+  { "id": 5, 
+  "name": "Laptop Sleeve", 
+  "category": "Electronics", 
+  "price": 1900 
+},
+  { "id": 6, 
+  "name": "Joggers", 
+  "category": "Sports", 
+  "price": 4599 
+},
   {
     "id": 7,
     "name": "Yoga Mat",
