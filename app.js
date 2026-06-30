@@ -1,3 +1,18 @@
+let products = [];
+
+fetch("products.json")
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    products = data;
+    applyFilters();
+  })
+  .catch(function(error) {
+    console.log(error);
+  });
+
+
 
 //searchProducts()
  
@@ -172,4 +187,4 @@ function applyFilters() {
 }
 
 
-applyFilters();   
+//applyFilters();   
